@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cat Fact Generator</title>
+  <link rel = "stylesheet" href = "styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Cat Fact Generator</h1>
+  <div id = "button">
+  <button type="button"  onclick="generate()" name="button">Generate</button>
+</div>
+  <script>
+    function generate(){
+    const url = "https://catfact.ninja/fact";
+    let fact = "";
+    fetch(url)
+        .then(function(response) {
+          return response.json();
+        }).then(function(json) {
+          fact = json.fact.toString();
+
+
+		document.getElementById("fact").innerHTML = "<p>" + fact + "</p>";
+          fact = fact.replace(/ /g, randomElement)});
+    }
+    </script>
+    <div class="container">
+    <div id = "fact"> </div>
+    <div id = "image"> <img src="https://c.files.bbci.co.uk/151AB/production/_111434468_gettyimages-1143489763.jpg" alt=""></div>
+    </div>
+
+<p class="footer"><a href="https://github.com/jaredmontierth">GitHub</a>
+</body>
+</html>

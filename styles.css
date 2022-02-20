@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  font-family: Arial;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  /* background-color: #95cdde */
+  background-color: white;
+}
+
+#image {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+a:link {
+  color: #bfbfbf;
+}
